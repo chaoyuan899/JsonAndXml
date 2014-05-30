@@ -36,6 +36,7 @@
     
 }
 
+//把 Array 和 Dictionaries 序列化为 JSON 对象
 -(void)jsonToDictionaryOrArray{
    
     NSError *error = nil;
@@ -50,12 +51,11 @@
     }else if (error != nil){
         NSLog(@"An error happened = %@",error);
     }
-
     
 }
 
 
-
+//把 JSON 数据反序列化为 Arrays 和 Dictionaries
 -(void)dictionaryOrArrayToJson{
     
     NSError *error = nil;
